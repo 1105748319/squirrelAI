@@ -8,7 +8,7 @@ import org.jsoup.nodes.Document;
 
 /**
  * 类：SquirrelAiRobot
- * 1.名称为松鼠AI机器人
+ * 1.名称为刘赟AI管家机器人
  * 2.通过AI自动回复用户消息
  * 3.对接图灵机器人
  */
@@ -51,13 +51,13 @@ public class SquirrelAiRobot {
                 String receiveAddress = data_jsonObject.getString("values");
 
                 JSONObject Txt_Json = JSONObject.fromObject(receiveAddress);
-                result = "松鼠AI：" + Txt_Json.get("text").toString();
+                result = "刘赟AI管家：" + Txt_Json.get("text").toString();
 //                result = "" + Txt_Json.get("text").toString();
             }
 
 
         } catch (Exception e) {
-            result = "松鼠AI：" + "对不起，我还不能理解到您说的话。";
+            result = "刘赟AI管家：" + "对不起，我还不能理解到您说的话。";
 //            result = "" + "对不起，我还不能理解到您说的话。";
         }
 

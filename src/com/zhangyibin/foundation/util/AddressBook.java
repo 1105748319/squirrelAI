@@ -40,13 +40,13 @@ public class AddressBook {
                 // 以下代码的作用：如果在数据库中没有找到的好友名称，将该好友插入到数据库中
                 String regexp = "'";//单引号
                 String reNickName = nickName.replaceAll(regexp, "");//为了防止SQL语句出错，将微信好友的名称中包含单引号的nickName进行处理
-
-                if (list.toString().indexOf(reNickName) == -1) {
+                System.out.println("微信好友名称：" + reNickName);
+                /*if (list.toString().indexOf(reNickName) == -1) {
                     System.out.println("不在数据库中的好友名称：" + reNickName);
                     String strSql = "INSERT INTO user VALUES ('" + userName + "','" + nickName + "','" + remarkName + "','" + province + "','" + city + "');";
                     InsertService.getInsertService(strSql);
 
-                }
+                }*/
             }
         } catch (Exception e) {
             e.printStackTrace();

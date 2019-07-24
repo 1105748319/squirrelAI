@@ -606,9 +606,9 @@ public class WechatApp {
 
                     }
                 } else if (msgType == 3) {
-                    webwxsendmsg("松鼠AI还不支持图片呢", msg.getString("FromUserName"));
+                    webwxsendmsg("刘赟AI管家还不支持图片呢", msg.getString("FromUserName"));
                 } else if (msgType == 34) {
-                    webwxsendmsg("松鼠AI还不支持语音呢", msg.getString("FromUserName"));
+                    webwxsendmsg("刘赟AI管家还不支持语音呢", msg.getString("FromUserName"));
                 } else if (msgType == 42) {
                     LOGGER.info(name + " 给你发送了一张名片:");
                 }
@@ -664,7 +664,7 @@ public class WechatApp {
 
                         LOGGER.info("[*] retcode=%s,selector=%s"+arr[0]+ arr[1]);
 
-                        if (arr[0] == 1100) {
+                        if (arr[0] == 4100) {
                             LOGGER.info("[*] 你在手机上登出了微信，再见！");
                             break;
                         }

@@ -4,7 +4,7 @@ import com.zhangyibin.application.StartWechatApp;
 
 /**
  * 类：UseSquirrelAi
- * 作用：启动松鼠AI
+ * 作用：启动刘赟AI管家
  */
 
 public class UseSquirrelAi {
